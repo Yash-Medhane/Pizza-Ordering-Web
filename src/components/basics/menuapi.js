@@ -73,7 +73,7 @@ description : "lorem dhdif ffkfkffntjkfn",
     name:"rice",
     category:"Special",
 price:"8$",
-description : "lorem dhdif ffkfkffntjkfn",  
+description : "lorem dhdif ffkfkffntjkf",  
 },];
 
 export default menu;
