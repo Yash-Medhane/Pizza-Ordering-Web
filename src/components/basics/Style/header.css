@@ -1,0 +1,61 @@
+/* header.css */
+.Navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px; /* Increased padding for better spacing */
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.Navbar h1 {
+  margin: 0; /* Remove default margin */
+  color: #8A4040;
+  font-size: 2rem; /* Increased font size for heading */
+  font-weight: bold; /* Add bold font weight for emphasis */
+  position: relative;
+  left: 100px;
+  transition: 0.5s;
+}
+.Navbar h1:hover{
+  transform: scale(1.2);
+}
+
+.Navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position:absolute;
+  right: 10%;
+}
+
+.Navbar ul li {
+  margin-right: 30px; /* Increased margin between menu items */
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.Navbar ul li a {
+  font-size: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 18px; /* Increased padding for better clickability */
+  border-radius: 25px; /* Add border radius for rounded corners */
+  transition: background-color 0.3s ease; /* Add transition for background color change */
+}
+
+.Navbar ul li a:hover {
+  background-color: #8A4040; /* Darken background color on hover */
+}
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

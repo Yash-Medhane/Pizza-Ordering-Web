@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./style.css";
+import "./Style/style.css"
 import Menu from "./menuapi.js";
 import MenuCard from "./MenuCard.js";
 import Navbar from "./Navbar.js";
