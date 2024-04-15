@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import "./Style/style.css"
-import Menu from "./menuapi.js";
-import MenuCard from "./MenuCard.js";
-import Navbar from "./Navbar.js";
+import Menu from "./menuapi.jsx";
+import MenuCard from "./MenuCard.jsx";
+import Navbar from "./Navbar.jsx";
 
 const uniqueList = [...new Set(Menu.map((currentElement) =>{
   return currentElement.category;

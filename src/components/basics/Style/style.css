@@ -5,7 +5,7 @@
   overflow-x: hidden;
 }
 body {
-  background-image: linear-gradient(to bottom right, #e17272, #ba5a5a); /* Gradient from top-left to bottom-right */
+  background-image: linear-gradient(to bottom right, black, #464040); /* Gradient from top-left to bottom-right */
 }
 
 .main-card--container {
@@ -24,7 +24,7 @@ body {
 }
 
 .card {
-  background-color: #FFFFFF; /* White card background */
+  background-color: white; /* White card background */
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
   overflow: hidden;
@@ -44,7 +44,7 @@ body {
 .card-number {
   display: inline-block;
   background-color: #333;
-  color: #fff;
+  color: white;
   border-radius: 50%;
   padding: 5px 10px;
 }
@@ -117,8 +117,8 @@ body {
 }
 
 .btn-group-item {
-  background-color: #544848; /* Dark red for button background */
-  color: #FFFFFF; /* White text */
+  background-color: gray; /* Dark red for button background */
+  color: white; /* White text */
   border: none;
   padding: 10px 20px;
   margin: 15px 5px;
@@ -133,6 +133,26 @@ body {
   transform: scale(1.1);
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .pizza-image-container {
+    overflow: hidden;
+  }
+
+  .pizza-image {
+    animation: pizza-image-spin infinite 20s linear;
+  }
+}
+
+@keyframes pizza-image-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 /* header.css */
 .header {
   display: flex;
@@ -142,18 +162,26 @@ body {
   align-items: center;
   margin-top: 20px;
 }
+.header > .left{
+  width: 40%;
+  height: auto;
+  overflow-y: hidden;
+}
 
 .pizza-image {
-  width: 100%; /* Ensure the image fills its container */
-  max-width: 500px;
+  width: 90%; /* Ensure the image fills its container */
   border-radius: 10px; /* Add border radius for rounded corners */
 
 }
 .header > .right > .head > h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #ca4a4a;
   font-family: 'Roboto', sans-serif;
-  animation: floatAnimation 3s infinite alternate; /* Apply floating animation */
+  overflow: hidden; /* Hide overflow to prevent text from overflowing */
+ /* Add border to simulate cursor */
+  white-space: nowrap; /* Prevent line breaks */
+  width: 0; /* Start with 0 width */
+  animation: typing 5s steps(100) infinite, blink 5s step-end infinite; /* Apply typing and blinking animations */
 }
 
 @keyframes floatAnimation {
@@ -161,23 +189,21 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   100% {
     transform: translateY(-70px);
   }
 }
-.highlights{
-  margin-left: 100px;
-  margin-top: 200px;
-}
+
 /* header.css */
 .highlights {
   display: flex;
   justify-content: space-between; /* Center-align and evenly distribute items */
-  margin-top: 250px; /* Add margin for spacing */
+  margin-top: 350px; /* Add margin for spacing */
+  margin-left: 100px;
   gap: 30px;
-  color: #c9c2c2;
+  color: white;
   font-size: 20px;
   position: relative;
   right: 13%;
@@ -225,12 +251,12 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: #48592d;
+    border-color: #8ad413;
   }
 }
 
 .quote {
-  color: #373a32;
+  color: #a5c077;
   font-size: 20px;
   margin-top: 10px;
   font-style: italic;
@@ -239,6 +265,76 @@ body {
   white-space: nowrap; /* Prevent line breaks */
   width: 0; /* Start with 0 width */
   animation: typing 5s steps(30) infinite, blink 1s step-end infinite; /* Apply typing and blinking animations */
+}
+
+
+/* footer.css */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.company-info,
+.contact-info,
+.social-media {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.company-info h3,
+.contact-info h3,
+.social-media h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+  color: #db6868;
+}
+
+.company-info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.company-info ul li {
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  margin-bottom: 5px;
+}
+
+.social-media ul li i {
+  margin-right: 5px;
+}
+
+.social-media ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-media ul li a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* Media query for responsiveness */

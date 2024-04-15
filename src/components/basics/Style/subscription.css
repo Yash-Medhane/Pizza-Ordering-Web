@@ -1,0 +1,79 @@
+/* Subscription.css */
+
+.subscription-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+ 
+}
+.subscription-container > h1{
+  color: #aa3535;
+  margin: 20px;
+  margin-left: 120px;
+  position: relative;
+  bottom: 20px;
+  font-size: 50px;
+}
+
+.subscription-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription-card {
+  width: 45%;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white; /* Light background color */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: transform 0.5s ease-in-out;
+}
+
+.subscription-card:hover{
+  background-color: #fadcdc;  /* Add a slight hover effect */
+}
+
+.subscription-card h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #8A4040; /* Dark text color */
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subscription-card ul {
+  padding: 0;
+}
+
+.subscription-card ul li {
+  margin-bottom: 8px;
+  color: black; /* Medium text color */
+  list-style: disc inside; /* Use bullet points inside */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.subscription-card p {
+  margin: 10px 0;
+  color: black; /* Light text color */
+  margin: 20px;
+}
+
+.subscription-card button {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 20px;
+  position: relative;
+  left: 20%;
+}
+
+.subscription-card button:hover {
+  background: linear-gradient(to right, #ff3d54, #ff7e5f); /* Gradient on hover */
+}
