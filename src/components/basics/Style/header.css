@@ -1,6 +1,6 @@
 /* header.css */
 .Navbar {
-  background-color: rgb(63, 60, 60);
+  background-image: linear-gradient(to bottom right, black, #514949); /* Gradient from top-left to bottom-right */
   overflow: hidden;
   position: fixed;
   top: 0;

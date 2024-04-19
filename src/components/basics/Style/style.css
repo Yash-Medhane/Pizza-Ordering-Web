@@ -5,7 +5,7 @@
   overflow-x: hidden;
 }
 body {
-  background-image: linear-gradient(to bottom right, black, #464040); /* Gradient from top-left to bottom-right */
+  background-image: linear-gradient(to bottom right, black, #150606); /* Gradient from top-left to bottom-right */
 }
 
 .main-card--container {
@@ -88,7 +88,7 @@ body {
 .card-read {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #BA6161; /* Dark red for read more button */
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
   color: #FFFFFF; /* White text */
   border: none;
   border-radius: 5px;
@@ -102,7 +102,7 @@ body {
 }
 
 .card-read:hover {
-  background-color: #8A4040; /* Darker red on hover */
+  background: linear-gradient(to right, #ff3d54, #ff7e5f); /* Gradient on hover */
 }
 
 .navbar {
@@ -129,7 +129,7 @@ body {
 }
 
 .btn-group-item:hover {
-  background-color: #8A4040; /* Darker red on hover */
+  background: linear-gradient(to right, #ff3d54, #ff7e5f); /* Gradient on hover */
   transform: scale(1.1);
 }
 
@@ -181,7 +181,8 @@ body {
  /* Add border to simulate cursor */
   white-space: nowrap; /* Prevent line breaks */
   width: 0; /* Start with 0 width */
-  animation: typing 5s steps(100) infinite, blink 5s step-end infinite; /* Apply typing and blinking animations */
+  animation: typing 5s steps(100), blink 5s step-end infinite;
+  animation-fill-mode: forwards;
 }
 
 @keyframes floatAnimation {
@@ -251,7 +252,7 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: #8ad413;
+    border-color: #2f381f;
   }
 }
 

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import ReviewApi from './ReviewApi';
 import "./Style/reviews.css";
+import profile from "../assets/boy.png"
 
 const CustomerReviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -18,7 +19,7 @@ const CustomerReviews = () => {
       <div className="customer-reviews">
         {reviews.map((review) => (
           <div key={review.id} className="customer-review">
-            <img src={review.imageUrl} alt={`Customer ${review.name}`} />
+            <img src={profile} alt={`Customer ${review.name}`} />
             <div className="review-details">
               <h3>{review.name}</h3>
               <div className="rating">
