@@ -24,7 +24,7 @@ const SubscriptionCard = ({ title, options, offer, price, buttonText }) => {
 const Subscription = () => {
   return (
     <div className="subscription-container">
-      <h1>Get Your Membership</h1>
+      <h1>Buy Your Membership Now</h1>
       <div className="subscription-cards">
         <SubscriptionCard
           title="Silver Membership"
